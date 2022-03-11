@@ -1,9 +1,7 @@
 const assert = require( 'assert' );
 const greet = require( '..' ); // loads ../index.js
 
-describe( 'Test greet API', () => {
-    it( 'should return `Hello Mike!`', () => {
-        const result = greet.hello( 'Mike' ); // returns 'Hello Mike!'
-        assert.equal( 'Hello Mike!', result );
-    } );
+it( 'should return `Hello Big Dyl!`', () => {
+    const result = greet.hello( 'Big Dyl' ); // returns 'Hello Big Dyl!'
+    assert.equal( 'Hello Big Dyl!', result );
 } );
