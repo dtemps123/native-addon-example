@@ -6,9 +6,13 @@
 Napi::String greetHello(const Napi::CallbackInfo& info) {
   Napi::Env env = info.Env();
 
+  // Get the arguments passed to this function call
+  // It only expects one, so 'userName' must be the first
+  std::string userName = (std::string) info[0].ToString();
+
   // call 'helloUser' function from 'greeting.cpp' file
   // WARNING: We are passing a hard coded value for name
-  std::string result = helloUser( "Big Dylan" );
+  std::string result = helloUser( userName );
 
   //return new 'Napi::String' value
   return Napi::String::New(env, result);
