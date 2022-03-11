@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/dtemps123/native-addon-example/issues"
   },
-  "homepage": "https://github.com/dtemps123/native-addon-example#readme"
+  "homepage": "https://github.com/dtemps123/native-addon-example#readme",
+  "dependencies": {
+    "node-addon-api": "^4.3.0"
+  }
 }
