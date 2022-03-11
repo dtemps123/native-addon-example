@@ -5,5 +5,5 @@ console.log( 'exports : ', greetModule );
 console.log();
 
 // exectute the 'greetHello' function
-console.log( 'greetModule.greetHello() : ', greetModule.greetHello() );
+console.log( 'greetModule.greetHello() : ', greetModule.greetHello( "Big Dyl" ) );
 console.log();
